@@ -29,8 +29,20 @@ puts " " # Terminal line break between outputs
 # to type them out over and over.
 
 
+def show_grocery_list
+
+  puts "Grocery List:"
+  grocery_list.each do |product|
+    puts "* #{product}"
+  end
+
+end
+
+
+
 # You lost count of how many things you need to pick up. Better output the total number of items on your list.
 
+puts "Total number of grocery items: #{grocery_list.size}" 
 
 # Check to see if your list includes "bananas". If it does, output "You need to pick up bananas". Otherwise, output "You don't need to pick up bananas today".
 
