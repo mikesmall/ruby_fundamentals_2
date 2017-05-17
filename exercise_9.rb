@@ -78,3 +78,10 @@ end
 puts " " # Terminal line break between outputs
 
 # After looking everywhere, you can't find the salmon. Delete it from your list and redisplay the list one last time.
+
+grocery_list.delete("salmon")
+
+puts "Grocery List, De-Salmonized:"
+grocery_list.each do |product|
+  puts "* #{product}"
+end
